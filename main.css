@@ -1,0 +1,93 @@
+:root{
+    --primary: crimson;
+    --secondary: green;
+    --third: yellow;
+    --dark: #1F2937;
+    --darker: #111827;
+    --light: #F3F4F6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans'i sans-serif;
+}
+
+body{
+    background: var(--dark);
+    color: var(--light);
+}
+
+.watch{
+    text-align: center;
+    background-color: var(--darker);
+    width: 100%;
+    max-width: 360px;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 16px 16px 32px 32px;
+    
+}
+
+.time{
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.controls .start{
+    color: var(--dark);
+    font-size: 1.125rem;
+    background-color: var(--secondary);
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    transition: 0.4s;
+}
+
+.controls .stop{
+    color: var(--dark);
+    font-size: 1.125rem;
+    background-color: var(--third);
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    transition: 0.4s;
+}
+
+.controls .reset{
+    color: var(--dark);
+    font-size: 1.125rem;
+    background-color: var(--primary);
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    transition: 0.4s;
+}
+
+.controls button:hover{
+    opacity: 0.7;
+}
+
+.controls button:active{
+    background-color: var(--dark);
+    color: var(--light);
+}
